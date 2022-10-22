@@ -16,7 +16,7 @@ headers = {
 "Accept-Encoding" : "gzip, deflate, br",
 "Accept-Language" : "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
 
-data = json.dumps({"identity":"0"+nomer})
+data = json.dumps({"identity":"0"+nomor})
 for i in range(jumlah):
 	pos = requests.post("https://eci.id/api/signup",headers=headers,data=data).text
 
